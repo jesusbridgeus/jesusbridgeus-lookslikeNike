@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mission Stories | JESUS BRIDGE US</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e7e2d9",
+                        "secondary-container": "#fdd79a",
+                        "on-surface": "#1d1c16",
+                        "secondary": "#755a28",
+                        "primary-container": "#1b1b1b",
+                        "outline": "#7e7576",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-container": "#785c2a",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "background": "#fef9ef",
+                        "on-secondary-fixed": "#271900",
+                        "surface-dim": "#ded9d1",
+                        "on-secondary-fixed-variant": "#5b4313",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#ede8df",
+                        "secondary-fixed-dim": "#e6c185",
+                        "surface-container-highest": "#e7e2d9",
+                        "tertiary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdeaa",
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary": "#000000",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-bright": "#fef9ef",
+                        "surface": "#fef9ef",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-background": "#1d1c16",
+                        "primary-fixed": "#e2e2e2",
+                        "inverse-surface": "#32302a",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "paper-white": "#F9F8F6",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-low": "#f8f3ea",
+                        "on-primary-container": "#848484",
+                        "on-tertiary-container": "#848484",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#1b1b1b",
+                        "deep-canvas": "#0D0D0D",
+                        "inverse-on-surface": "#f5f0e7",
+                        "divine-gold": "#C5A36A",
+                        "surface-container": "#f2ede4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "stack-md": "24px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "nav-link": ["Inter"],
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .editorial-underline {
+            position: relative;
+        }
+        .editorial-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .group:hover .editorial-underline::after {
+            width: 100%;
+        }
+
+        .scroll-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scroll-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar Shell -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 px-margin-desktop py-6 flex justify-between items-center">
+<div class="flex items-center gap-6">
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-display-lg text-headline-md tracking-tighter text-primary">JESUS BRIDGE US</h1>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">Home</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">Ministries</a>
+<a class="font-nav-link text-nav-link text-primary border-b border-primary pb-1" href="#">Mission Stories</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors" href="#">Impact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary font-label-caps px-6 py-3 tracking-widest hover:bg-opacity-90 active:scale-95 transition-all">
+                DONATE
+            </button>
+</div>
+</header>
+<!-- Side Drawer for Mobile (Hidden by Default) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col p-stack-md bg-paper-white shadow-2xl -translate-x-full transition-transform duration-300 w-80 md:hidden" id="drawer">
+<div class="flex justify-between items-center mb-12">
+<span class="font-display-lg text-headline-lg text-primary">JBU.</span>
+<button class="text-primary" onclick="toggleDrawer()">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-8">
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all" href="#">Home</a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all" href="#">Ministries</a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-primary font-bold bg-surface-variant/50 p-2" href="#">Mission Stories</a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all" href="#">Impact</a>
+</nav>
+</div>
+<main class="pt-[120px] pb-stack-lg">
+<!-- Hero Title Section -->
+<section class="px-margin-desktop mb-stack-lg">
+<div class="max-w-4xl">
+<p class="font-label-caps text-secondary uppercase mb-4">The Narrative of Faith</p>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg leading-tight mb-8">Stories of Impact &amp; Global Mission</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">Bridging culture through personal testimonies and structural transformations. Explore how we are building bridges in communities worldwide.</p>
+</div>
+</section>
+<!-- Filters & Search Bar -->
+<section class="px-margin-desktop mb-stack-md">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-gutter border-b border-outline-variant pb-stack-sm">
+<div class="flex gap-6 overflow-x-auto scroll-hide pb-2">
+<button class="font-label-caps text-primary border-b-2 border-primary whitespace-nowrap">ALL STORIES</button>
+<button class="font-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">MISSIONS</button>
+<button class="font-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">PRAYER</button>
+<button class="font-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">LIBRARY</button>
+<button class="font-label-caps text-on-surface-variant hover:text-primary transition-colors whitespace-nowrap">CULTURE</button>
+</div>
+<div class="relative w-full md:w-80 group">
+<input class="w-full bg-transparent border-none border-b border-outline text-body-md py-2 focus:ring-0 focus:border-primary transition-all" placeholder="SEARCH STORIES..." type="text"/>
+<span class="material-symbols-outlined absolute right-0 top-2 text-outline-variant group-focus-within:text-primary" data-icon="search">search</span>
+</div>
+</div>
+</section>
+<!-- Featured Story (Asymmetric Layout) -->
+<section class="px-margin-desktop mb-stack-lg">
+<div class="grid grid-cols-12 gap-gutter items-center group cursor-pointer">
+<div class="col-span-12 md:col-span-8 relative overflow-hidden aspect-[16/9]">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-all duration-700"></div>
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105 group-hover:scale-100" data-alt="A cinematic, high-contrast photograph of a young girl in a vibrant blue headscarf studying intensely on a tablet in a rustic, earth-toned village setting. In the background, a digital overlay of a vast, modern library is subtly blended, creating a juxtaposition of physical simplicity and digital expansion. The lighting is warm and golden, reflecting the sacred modernism aesthetic with deep blacks and rich natural textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6j5lePy8OC-0kK6-GKlqPyTmyvIBJ8M-4nZqQYHyuFnaxyU33pV1L7HlHi6XooLgfghU7hxiCl_qraTg5D5h4OUhKx67VhrSHnt4dXaUva8SIlSgQ-Y_6zZHX-_d-piErLbUngcnts2X_qeU7jeSox-U3jNaXzdJR0zlgdm3_rolJzibgvtNln8-BEgdATjkFamu38iWNjcsRrkK-EZnAA4XH__SJocXdgVzjOCYXdb3ZmDB4q5_WekwCfzoG7fB6CDhbg4C13co"/>
+<div class="absolute top-8 left-8 bg-primary text-on-primary px-4 py-2 font-label-caps">FEATURED STORY</div>
+</div>
+<div class="col-span-12 md:col-span-4 flex flex-col justify-center">
+<span class="font-label-caps text-secondary mb-2">LIBRARY MISSION</span>
+<h3 class="font-headline-lg text-headline-md md:text-headline-lg editorial-underline mb-6">Bridging the Literacy Gap with Virtual Horizons</h3>
+<p class="font-body-md text-on-surface-variant mb-8">How a small community in rural Nigeria accessed the world's greatest literature through our Virtual Library initiative, blending ancient faith with futuristic tools.</p>
+<div class="flex items-center gap-4 text-outline font-label-caps">
+<span>OCTOBER 12, 2024</span>
+<span class="w-8 h-[1px] bg-outline-variant"></span>
+<span>8 MIN READ</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Bento Grid -->
+<section class="px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square mb-stack-sm overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A minimalist architectural shot of a modern prayer chapel featuring clean white lines and a single beam of natural light illuminating a dark stone floor. The atmosphere is serene and deeply intentional, following a high-end editorial style. The color palette consists of pristine paper-white and deep ebony, reflecting the sacred modernism of the Jesus Bridge Us brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB7YASpGZpry_fleImtylFwbZZQPYXIj9DTOMgMfoT7p7qFTn8v3l7_6kdYRhMtRxfBav_P0z8jCU2rhp_puZwipfAVYELn_ctD22n6E65C3zQRSOcwc0dD4TXTCP0ySLip483Nut_iLB7RHgzInF1YuCV1kGX_qUgTMpdho5hHoIzh9Sf5bWAY9BWpjoHPvEh1VCEPxTU2P9qeYW821Y9VsiqQ9qdHjDYy7JPuXVFTtPpdO73K8mDx0Ep65_1rddwr3QEjzOllAw"/>
+</div>
+<div class="py-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-secondary">PRAYER</span>
+<span class="font-label-caps text-outline">SEP 28</span>
+</div>
+<h4 class="font-headline-md text-headline-md editorial-underline mb-4">The Architecture of Stillness: 40 Days of Reflection</h4>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Discovering the power of silent intercession in the heart of the world's busiest metropolitan hubs.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square mb-stack-sm overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a missionary worker standing in a bustling urban street market, captured with a shallow depth of field. The style is raw yet sophisticated, resembling a luxury documentary photography spread. The lighting is soft morning light, and the subject is dressed in minimalist, high-quality utilitarian clothing, bridging the gap between missionary work and modern high-end fashion aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCAq3yDetgcFDuE0zCVj8JoDGC1iOYFoiD1M8HbApCIQDYVeyFlgC2XbVVrDTRF08a2o51QdsZc1ZvYri-5Tyxoey-6Unh2SBioF9ozWSYDZO8I0-6v0SErQD-uXunZZgcVK0ki8DXoNtpxlVVhGcWMRcCL6VbNhxSHBWNnTaAEqCCuVIyfGZXToaYTRpWZVHPSDXOubimzzXhjJMnb_f7YNcfljWuwzCvzRUBBtZ99NPazZ24oQfScQBc23Li7aevfcCO3aBaP-E"/>
+</div>
+<div class="py-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-secondary">MISSIONS</span>
+<span class="font-label-caps text-outline">SEP 15</span>
+</div>
+<h4 class="font-headline-md text-headline-md editorial-underline mb-4">Urban Evangelism in the High-End District</h4>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Engaging with cultural leaders to foster a new generation of faith-driven creators and thinkers.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square mb-stack-sm overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A high-angle shot of a collection of vintage theological books stacked neatly on a sleek black designer table. A single gold bookmark is visible. The lighting is moody and dramatic, focusing on the textures of the leather bindings and the matte finish of the table. The style is modern editorial, emphasizing sophistication and deep intentionality in knowledge and faith." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjdj8ginMeGuZLkoVKj93q8YBxRhsggneWDwukhT-7ANyb50s2kfDiDvqiwLIN7wq5UGaKIy8x0WgJA1E1_ceLL9kToiyppJbMWf2Rof3a9_d_EL9eo0Owbuwnk2opu0FT8yFrxjUqpcAupY8Fh6cWFWvxjIGFI1szJRBh7T0h2DVTYpdZ6SHauGi3GTbulz94jd-7_6w3frkvFQ6CDTLpxaQYghjiDI_pL9KssRUOSZO8cEP1pQgM9DkodTzDMv5pUXoc0O0v90E"/>
+</div>
+<div class="py-4">
+<div class="flex justify-between items-start mb-4">
+<span class="font-label-caps text-secondary">CULTURE</span>
+<span class="font-label-caps text-outline">AUG 22</span>
+</div>
+<h4 class="font-headline-md text-headline-md editorial-underline mb-4">Curating the Sacred: Literature as a Bridge</h4>
+<p class="font-body-md text-on-surface-variant line-clamp-2">How we curated a 5,000-volume digital repository to preserve dying indigenous languages through scripture.</p>
+</div>
+</div>
+<!-- Card 4 (Horizontal Span) -->
+<div class="md:col-span-2 group cursor-pointer flex flex-col md:flex-row border-t border-outline-variant/30 pt-gutter gap-gutter">
+<div class="md:w-1/2 aspect-video overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A wide-angle landscape shot of a bridge connecting two modern glass skyscrapers, seen from below. The sky is a dramatic deep blue with wisps of white clouds. The architecture is sharp and futuristic. The image serves as a visual metaphor for bridging culture and faith, executed in a clean, high-contrast, modern editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjbjLxWUX0CqB6vX4_1EgLhIzwydUIpRH9ipBtw78ce9OMli7C8L4bvMSkcqAUd3bTpWhhh4H_3N2gLFelO-scTa5jNU4BEwg30ZsQvfN9JR2KlsGOBFDNBZGfEG-lNJJ0FltYfEGnxEwhcYFxwUJVaMO69aI5nPmVV2O750nZHdwa9vvbS60Lx5NqCLYbXTwfhH00SJcDTa8S8dCUJKbcJjxw0n_JrTr4PWQdU4kTqorrpIS6PsNi35OjY7tui6dUFi1j5nbQjhE"/>
+</div>
+<div class="md:w-1/2 flex flex-col justify-center">
+<span class="font-label-caps text-secondary mb-2">IMPACT REPORT</span>
+<h4 class="font-headline-md text-headline-md editorial-underline mb-4">Quarterly Momentum: 12 Cities, One Message</h4>
+<p class="font-body-md text-on-surface-variant mb-6">A visual breakdown of our growth in the third quarter, highlighting new partnerships in Singapore, Paris, and Nairobi.</p>
+<div class="flex items-center gap-4 text-outline font-label-caps">
+<span>JULY 05, 2024</span>
+</div>
+</div>
+</div>
+<!-- Card 5 (Vertical Interest) -->
+<div class="group cursor-pointer bg-surface-container-highest p-8 flex flex-col justify-end min-h-[400px]">
+<div class="mb-auto">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="auto_stories">auto_stories</span>
+</div>
+<div>
+<span class="font-label-caps text-secondary mb-2">STORY SERIES</span>
+<h4 class="font-headline-md text-headline-md editorial-underline mb-4">The 'Bridge-Builders' Anthology</h4>
+<p class="font-body-md text-on-surface-variant mb-6">A curated collection of short stories from the frontlines of global mission work.</p>
+<button class="border border-primary px-4 py-2 font-label-caps hover:bg-primary hover:text-on-primary transition-all">VIEW COLLECTION</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Pagination -->
+<section class="px-margin-desktop mt-stack-lg flex justify-center items-center gap-8">
+<button class="group flex items-center gap-2 font-label-caps text-outline hover:text-primary transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+                PREVIOUS
+            </button>
+<div class="flex items-center gap-4 font-label-caps">
+<span class="text-primary border-b border-primary">01</span>
+<span class="text-outline hover:text-primary cursor-pointer transition-colors">02</span>
+<span class="text-outline hover:text-primary cursor-pointer transition-colors">03</span>
+<span class="text-outline">...</span>
+<span class="text-outline hover:text-primary cursor-pointer transition-colors">12</span>
+</div>
+<button class="group flex items-center gap-2 font-label-caps text-primary hover:opacity-70 transition-opacity">
+                NEXT
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full pt-stack-lg pb-stack-md bg-surface-container-highest flex flex-col md:flex-row justify-between items-start px-margin-desktop gap-gutter border-t border-outline-variant/50">
+<div class="flex flex-col gap-6 max-w-sm">
+<h2 class="font-display-lg text-headline-md text-primary">JESUS BRIDGE US</h2>
+<p class="font-body-md text-on-surface-variant">Elevating mission work through modern excellence and intentional culture bridging. Built for a global community of faith-driven pioneers.</p>
+<p class="font-label-caps text-on-surface-variant/60">© 2024 JESUS BRIDGE US. ALL RIGHTS RESERVED. FAITH BRIDGING CULTURE.</p>
+</div>
+<div class="grid grid-cols-2 gap-x-gutter gap-y-stack-sm">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-primary mb-2">EXPLORE</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Ministries</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Stories</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Impact</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-primary mb-2">LEGAL</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Annual Report</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-primary">FOLLOW THE JOURNEY</span>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="language">language</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            drawer.classList.toggle('-translate-x-full');
+        }
+
+        // Search highlight effect
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('border-primary');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('border-primary');
+        });
+
+        // Simple Fade-in effect for cards on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.group').forEach(card => {
+            card.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(card);
+        });
+    </script>
+</body></html>

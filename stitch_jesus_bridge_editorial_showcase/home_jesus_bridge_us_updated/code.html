@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JESUS BRIDGE US | Bridging Nations to Jesus</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400..900;1,400..900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e7e2d9",
+                        "secondary-container": "#fdd79a",
+                        "on-surface": "#1d1c16",
+                        "secondary": "#755a28",
+                        "primary-container": "#1b1b1b",
+                        "outline": "#7e7576",
+                        "outline-variant": "#cfc4c5",
+                        "on-secondary-container": "#785c2a",
+                        "on-tertiary-fixed": "#1b1b1b",
+                        "on-error-container": "#93000a",
+                        "error-container": "#ffdad6",
+                        "background": "#fef9ef",
+                        "on-secondary-fixed": "#271900",
+                        "surface-dim": "#ded9d1",
+                        "on-secondary-fixed-variant": "#5b4313",
+                        "tertiary-fixed": "#e2e2e2",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#ede8df",
+                        "secondary-fixed-dim": "#e6c185",
+                        "surface-container-highest": "#e7e2d9",
+                        "tertiary": "#000000",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#ffdeaa",
+                        "on-surface-variant": "#4c4546",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "primary": "#000000",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "surface-bright": "#fef9ef",
+                        "surface": "#fef9ef",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#5e5e5e",
+                        "on-background": "#1d1c16",
+                        "primary-fixed": "#e2e2e2",
+                        "inverse-surface": "#32302a",
+                        "on-tertiary-fixed-variant": "#474747",
+                        "paper-white": "#F9F8F6",
+                        "on-primary-fixed-variant": "#474747",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-low": "#f8f3ea",
+                        "on-primary-container": "#848484",
+                        "on-tertiary-container": "#848484",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#1b1b1b",
+                        "deep-canvas": "#0D0D0D",
+                        "inverse-on-surface": "#f5f0e7",
+                        "divine-gold": "#C5A36A",
+                        "surface-container": "#f2ede4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "stack-md": "24px",
+                        "gutter": "24px",
+                        "stack-sm": "8px",
+                        "margin-mobile": "20px",
+                        "stack-lg": "80px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-lg": ["Bodoni Moda"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "nav-link": ["Inter"],
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "display-lg": ["84px", {"lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["48px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "nav-link": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-lg": ["48px", {"lineHeight": "56px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #fef9ef;
+            color: #1d1c16;
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-underline {
+            position: relative;
+        }
+        .nav-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        .nav-underline:hover::after {
+            width: 100%;
+        }
+        .nike-grid-card {
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .nike-grid-card:hover {
+            transform: translateY(-4px);
+        }
+        .nike-image-zoom {
+            transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .nike-grid-card:hover .nike-image-zoom {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-body-md overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300" id="main-header">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full max-w-full">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary" onclick="toggleDrawer()">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<div class="flex items-center gap-3">
+<img alt="JESUS BRIDGE US Logo" class="w-10 h-10 object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLthBYmSmO6f3-SW_jFINa_KI5SOCN30pcVyPlD7_EcTnF4UhVhSRWgkAdgGYewSztrTp9_S596u_rqyepJKuu29fls8HLTYDdkWt4-Hv9dR5w952QctsgXmXdPypifOtSzhmVSn27GYiUjB-0NwFjlij7bDW-hte-usOJglMUlWNghBnQnggbjBmN1Qoo2ymgSj6K_Wcs0BL5NGxi6Y1pArnpxNLkKeSTH6EzQp22bo7p4SPJwWwfrg5Mw"/>
+<span class="font-display-lg text-headline-md tracking-tighter text-primary">JESUS BRIDGE US</span>
+</div>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-10">
+<a class="font-nav-link text-nav-link text-primary nav-underline" href="#">Home</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Ministries</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Mission Stories</a>
+<a class="font-nav-link text-nav-link text-on-surface-variant hover:text-primary transition-colors nav-underline" href="#">Impact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hidden lg:block text-primary hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="bg-primary text-on-primary font-label-caps px-8 py-3 rounded-none uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all">
+                    DONATE
+                </button>
+</div>
+</nav>
+</header>
+<!-- NavigationDrawer (Mobile) -->
+<div class="fixed inset-y-0 left-0 z-[60] flex flex-col p-stack-md w-80 bg-paper-white shadow-2xl -translate-x-full transition-transform duration-300 ease-in-out" id="drawer">
+<div class="flex justify-between items-center mb-10">
+<span class="font-display-lg text-headline-lg text-primary">JBU</span>
+<button onclick="toggleDrawer()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-6">
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-primary font-bold bg-surface-variant/50 p-3 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">home</span> Home
+            </a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all duration-300 p-3 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">grid_view</span> Ministries
+            </a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all duration-300 p-3 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">auto_stories</span> Mission Stories
+            </a>
+<a class="font-nav-link text-body-lg uppercase tracking-widest text-outline-variant hover:pl-4 transition-all duration-300 p-3 flex items-center gap-4" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span> Impact
+            </a>
+</div>
+</div>
+<div class="fixed inset-0 bg-black/40 z-[55] hidden transition-opacity duration-300" id="drawer-overlay" onclick="toggleDrawer()"></div>
+<main class="pt-[90px]">
+<!-- Hero Section -->
+<section class="relative h-[85vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<img alt="Community connection" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLsTbqI8-uFSag3KIwdTMp4YbncvsI6cmRISAwyNF6aFLNiITBlP0YW5oH54ceEP-i3gl9gqtmsAJdZpq1sBO1LaRcM0WANwsMDkQofyBmswpsuqVkRZUsP-HM8__naC-sS0nvxx_xjA0o7FfUgkdazIf6cZ9kEFO3JoewSWn3tx5rFfYwXLh1CFXF3ccvglDGJdo8m0j2oAXqd_-1Pe1A2si0guX7QfepCVkyLfoLEG7wzyF4d2eagvsA"/>
+<div class="relative z-20 text-center text-on-primary px-margin-mobile max-w-6xl">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8 leading-[1.1]">
+                    Bridging Nations<br/>to Jesus
+                </h1>
+<p class="font-body-lg text-white/90 max-w-2xl mx-auto mb-12 text-lg md:text-xl">
+                    A movement dedicated to spiritual restoration, global compassion, and sharing the uncompromised Word of God across all borders.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-on-primary text-primary font-label-caps px-12 py-5 uppercase tracking-widest hover:bg-surface-variant transition-all font-bold">
+                        Learn Our Mission
+                    </button>
+<button class="border-2 border-on-primary text-on-primary font-label-caps px-12 py-5 uppercase tracking-widest hover:bg-on-primary hover:text-primary transition-all font-bold">
+                        Join the Movement
+                    </button>
+</div>
+</div>
+</section>
+<!-- New Stories Section (Nike Style) -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-background overflow-hidden">
+<div class="flex justify-between items-end mb-10">
+<h2 class="font-headline-lg text-primary">LATEST UPDATES</h2>
+<a class="font-label-caps text-primary border-b-2 border-primary pb-1 hover:opacity-60 transition-opacity" href="#">VIEW ALL</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Story Card 1 -->
+<div class="nike-grid-card cursor-pointer group">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6">
+<img alt="Mission in Kenya" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Pgv23Ib9rmShV4aCbOLVr7UaLBB3ZqDG-GwqGRg64IxAtNb4UzeLSWVHVMbG0bwFH2XIN_KGexEPDMmyDEWbwDiW3Xl-AaxcgRq9wP3jjl7c5YbDdxnrMUUQm7kkiyWSugDcgFeVp4RvNK-NHM_brtl67Ww07oHT5orvkO0AHHdWHN4cXLtG6HPxfxvV1PYV2VHlnXldwsqfj0Q4_PM5asIk1mTHqJg2cQlw6S9msbSjvuI1p12t4mr1wPEqr2SrP5RGNMgUXCI"/>
+</div>
+<div class="space-y-2">
+<span class="font-label-caps text-secondary">GLOBAL OUTREACH</span>
+<h3 class="font-headline-md text-2xl leading-tight">Walking the Path of Restoration in East Africa</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">How clean water and the gospel transformed a remote village in Kenya through partnership.</p>
+</div>
+</div>
+<!-- Story Card 2 -->
+<div class="nike-grid-card cursor-pointer group">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6">
+<img alt="Urban Ministry" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAHVqIg51vohXy2XC3iYajG2HZ_MInmrseyZyjUw2udN8-kQcvWAfSyFcLhdbPE67bJke5MbKyxdRcXjeKOlQ1v4FVHV3YfNG3ZVxjWTd4hJCEHX05jYvccCTztu4wlQfY-ZyLzeHqeHoNdf0p-sdzEJi8ha7ggmlOmi5PLW5CDvLJWC7u_76-jcL1BbKXDTa88UQKwFje7yhqR-0clws-t8NxcjrS808BQ5VVHpiXNPmn3lMSXDARv5ADWR05vup8_lOjr1OM16w"/>
+</div>
+<div class="space-y-2">
+<span class="font-label-caps text-secondary">URBAN MINISTRY</span>
+<h3 class="font-headline-md text-2xl leading-tight">The Bridge: Connecting Hearts in the City</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Sharing our unique approach to urban ministry and how modern faith meets culture.</p>
+</div>
+</div>
+<!-- Story Card 3 -->
+<div class="nike-grid-card cursor-pointer group">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6">
+<img alt="Scholarship Program" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9_JtEVW4BRcrEQkYlRuy7qiZty8JjHjgKyeyujz_axv78KmNNLmHIxByuwYiMyLQxhZ28HWSDEXztpDa2vGjUBU25v7YH06PQOxkVS0ngQoqQc21bW8uDXK_UQ9Do22osAg6fWd-cQQwHE3FOOn8EgUQ1WfIE7Z858evG1X32w7OdhV3JvSJkXxgSd38mOzC36abansHrFaVpZZ9C19Wu1uR7Z6-aREWYIBhBdkFvydh15VRUeYYSG40cKiOQi5iW8sjThZU8f5k"/>
+</div>
+<div class="space-y-2">
+<span class="font-label-caps text-secondary">EDUCATION</span>
+<h3 class="font-headline-md text-2xl leading-tight">Scholarship of Hope: Empowering the Next Gen</h3>
+<p class="font-body-md text-on-surface-variant line-clamp-2">Supporting migrant children across borders so they don't give up on their education.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ministry Grid Section (Shop by Ministry) -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-white">
+<div class="mb-12">
+<h2 class="font-headline-lg text-primary mb-4">MINISTRY IMPACT</h2>
+<p class="font-body-lg text-on-surface-variant max-w-2xl">Bridging communities through sports, education, and spiritual leadership.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+<!-- FC Dream -->
+<div class="nike-grid-card group cursor-pointer border-t border-outline-variant/30 pt-8">
+<div class="aspect-square bg-surface-container overflow-hidden mb-8">
+<img alt="FC Dream Cambodia" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUUkCJlKOGOx-vigNK2pJvbdaIEb2ZLX8laAKXwPgqj_aLu8Q6rqJ9J4Jf3Ju5eUAW_Wk5mk327p3ouTAvP3P5FCagNANlv2GHfHkGUZg3g1Eex7Pm6pMsCA_yLnHsQ4ikNqBi_jfaJBYz6U6fPgdhqiVip6U2yQh6R46MFjaajFQ8wR5EbQTbj4Xo_lcAJH8KVAckEA-fthM7pRC5fziZ-VnObY96g3yiWrV_NVB-CmwIv4eZ7_mfKXm1jfctU4BHPs3XwMbfZjU"/>
+</div>
+<div class="space-y-3">
+<h3 class="font-headline-md text-3xl">FC Dream Soccer Mission</h3>
+<p class="font-body-md text-on-surface-variant text-lg">Empowering children in Kampot through football.</p>
+<button class="mt-4 font-label-caps text-primary border-b border-primary hover:text-secondary transition-colors">EXPLORE MISSION</button>
+</div>
+</div>
+<!-- Palawan High School -->
+<div class="nike-grid-card group cursor-pointer border-t border-outline-variant/30 pt-8">
+<div class="aspect-square bg-surface-container overflow-hidden mb-8">
+<img alt="Palawan High School" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAx38W-adusMbO_s3q1TJHCK_1Ub9UPTHBWa0-UY7u0EjQM26PWn72oFkGMOo209zgjPiPvF12lWe-0AWTRaAnXFle1kEMVtMSufoyJkePaFaNxS3cuUnMmdKK27SimNdz-Y5HQAB7dXFtshJXO8GZGCs4xMh8YGYu9E7C6h6qrqFs17dJX0ZRve_p6T44Qg9yqXidYftUrCVxYYbOl8fEm0DqtVP_V4R7VaZxtjPHLU3rAXJx_d-ZbvqKjwzDhgZjS9XUFq-GJrVU"/>
+</div>
+<div class="space-y-3">
+<h3 class="font-headline-md text-3xl">Palawan Victory</h3>
+<p class="font-body-md text-on-surface-variant text-lg">Celebrating our students winning the Governor's Cup within 2 years of founding.</p>
+<button class="mt-4 font-label-caps text-primary border-b border-primary hover:text-secondary transition-colors">READ THE STORY</button>
+</div>
+</div>
+<!-- Scholarship Program -->
+<div class="nike-grid-card group cursor-pointer border-t border-outline-variant/30 pt-8">
+<div class="aspect-square bg-surface-container overflow-hidden mb-8">
+<img alt="Scholarship Program" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9_JtEVW4BRcrEQkYlRuy7qiZty8JjHjgKyeyujz_axv78KmNNLmHIxByuwYiMyLQxhZ28HWSDEXztpDa2vGjUBU25v7YH06PQOxkVS0ngQoqQc21bW8uDXK_UQ9Do22osAg6fWd-cQQwHE3FOOn8EgUQ1WfIE7Z858evG1X32w7OdhV3JvSJkXxgSd38mOzC36abansHrFaVpZZ9C19Wu1uR7Z6-aREWYIBhBdkFvydh15VRUeYYSG40cKiOQi5iW8sjThZU8f5k"/>
+</div>
+<div class="space-y-3">
+<h3 class="font-headline-md text-3xl">Scholarship of Hope</h3>
+<p class="font-body-md text-on-surface-variant text-lg">Supporting migrant children so they don't give up on their education.</p>
+<button class="mt-4 font-label-caps text-primary border-b border-primary hover:text-secondary transition-colors">SUPPORT A CHILD</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Digital & Creative Outreach Section -->
+<section class="py-stack-lg px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-12 border-b border-outline-variant pb-6">
+<h2 class="font-headline-lg text-primary">DIGITAL &amp; CREATIVE</h2>
+<span class="font-label-caps text-outline">SHARING THE WORD</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="nike-grid-card bg-white p-6 group cursor-pointer">
+<div class="aspect-video overflow-hidden mb-6">
+<img alt="Daily Bread QT" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv-G7D-W5txpF9a764X_yRTPZgt9N6aOXJNkRsDb9otUU2b2XwWkIKSEpBzJc_NPSuylfCwlu1HGWj79zQbItsBiKxIWNbGjbjnLFgcBpBnEozoS4a8rtnJ_xpeTuZ9F8jfuEhqudAutkmRX7RSkUMz-JhgIDsCNsD9RZOaZDLF_50RRIsJ5GvtNGVEGx8j25wPVxLJokeajo3WPcniAJMW5cH6kxkD8-85jZ6Xa18rO4IQPCRRQMtrFhaUHjhoPP6ro7xSeCIKak"/>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Daily Bread QT (YouTube)</h4>
+<p class="font-body-md text-on-surface-variant">Daily spiritual nourishment through our curated video series.</p>
+</div>
+<!-- Card 2 -->
+<div class="nike-grid-card bg-white p-6 group cursor-pointer">
+<div class="aspect-video overflow-hidden mb-6">
+<img alt="Missionary Messages" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida/AP1WRLsTbqI8-uFSag3KIwdTMp4YbncvsI6cmRISAwyNF6aFLNiITBlP0YW5oH54ceEP-i3gl9gqtmsAJdZpq1sBO1LaRcM0WANwsMDkQofyBmswpsuqVkRZUsP-HM8__naC-sS0nvxx_xjA0o7FfUgkdazIf6cZ9kEFO3JoewSWn3tx5rFfYwXLh1CFXF3ccvglDGJdo8m0j2oAXqd_-1Pe1A2si0guX7QfepCVkyLfoLEG7wzyF4d2eagvsA"/>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Missionary Messages</h4>
+<p class="font-body-md text-on-surface-variant">Uncompromised Gospel teachings from our global mission leaders.</p>
+</div>
+<!-- Card 3 -->
+<div class="nike-grid-card bg-white p-6 group cursor-pointer">
+<div class="aspect-video overflow-hidden mb-6">
+<img alt="Knitting Mission" class="w-full h-full object-cover nike-image-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEnp2fkI9azWGbEruUqXqkT5YWKb8QYwDCxtFW8rI4oOLuP9RMMxau36GTScy12ze3eFdtw8H_agwC71GfL3IGXhcOz7j5X8zsgP5G_3EVdu0QnE0RRX01gwRVaqSmedJWzoXvFZU9U-Bw_ddTeQPT6l1oKRqufSTcuD2z6uydrK4qRjqnCbTsZKoWn5OYVW3La2k1bLg6Iai_VFSjLRtTM6qYRaAkcV27QEEJuiwFJ5ZG3KeDC2DQCGWHf8kCJjezsQw0SZWdSN4"/>
+</div>
+<h4 class="font-headline-md text-xl mb-2">Knitting Mission</h4>
+<p class="font-body-md text-on-surface-variant">Handcrafted with love for those in need around the world.</p>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="relative py-32 overflow-hidden bg-primary">
+<div class="relative z-10 px-margin-mobile text-center text-on-primary">
+<h2 class="font-display-lg text-headline-lg md:text-display-lg mb-8">Ready to Bridge the Gap?</h2>
+<p class="font-body-lg text-outline-variant max-w-xl mx-auto mb-12">
+                    Your contribution directly impacts lives globally. Join us in building a bridge that leads to eternal hope.
+                </p>
+<div class="flex justify-center">
+<button class="bg-divine-gold text-white font-label-caps px-16 py-6 uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all text-lg font-bold">
+                        Support the Mission
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-stack-lg pb-stack-md bg-surface-container-highest border-t border-outline-variant/50 px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-start gap-gutter mb-20">
+<div class="max-w-md">
+<span class="font-display-lg text-headline-md text-primary mb-6 block">JESUS BRIDGE US</span>
+<p class="font-body-md text-on-surface-variant mb-8">
+                    An intentional community bridging culture and faith through deep-rooted spiritual practice and global action.
+                </p>
+<div class="flex gap-6">
+<a class="text-primary hover:opacity-70 transition-opacity" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-primary hover:opacity-70 transition-opacity" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-12 w-full md:w-auto">
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-primary mb-2">NAVIGATE</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Ministries</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Mission Stories</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Impact</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-caps text-primary mb-2">RESOURCES</span>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Annual Report</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletters</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Press Kit</a>
+</div>
+<div class="flex flex-col gap-4 col-span-2 lg:col-span-1">
+<span class="font-label-caps text-primary mb-2">CONTACT</span>
+<address class="font-body-md text-on-surface-variant not-italic">
+                        123 Faith Lane<br/>
+                        Global Way, NY 10001<br/>
+                        contact@jesusbridgeus.org
+                    </address>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-outline-variant/30 pt-10">
+<span class="font-body-md text-on-surface-variant text-sm">© 2024 JESUS BRIDGE US. ALL RIGHTS RESERVED. FAITH BRIDGING CULTURE.</span>
+<div class="flex gap-8">
+<a class="font-body-md text-on-surface-variant text-sm hover:text-primary transition-colors underline" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-surface-variant text-sm hover:text-primary transition-colors underline" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+        function toggleDrawer() {
+            const drawer = document.getElementById('drawer');
+            const overlay = document.getElementById('drawer-overlay');
+            const isOpen = drawer.classList.contains('translate-x-0');
+
+            if (isOpen) {
+                drawer.classList.remove('translate-x-0');
+                drawer.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            } else {
+                drawer.classList.add('translate-x-0');
+                drawer.classList.remove('-translate-x-full');
+                overlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 50) {
+                header.classList.add('py-4');
+                header.classList.remove('py-6');
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('py-4');
+                header.classList.add('py-6');
+                header.classList.remove('shadow-sm');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body></html>
